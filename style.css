@@ -1,0 +1,297 @@
+/* font-family: "Public Sans", sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Manrope:wght@200..800&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Public Sans", sans-serif;
+}
+
+/* ! ---------------- css variable ------------------ */
+:root {
+    --gradiant: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+    --heading-clr: hsl(233, 26%, 24%);
+    --text-clr: hsl(233, 8%, 62%);
+    --nav-and-card-bg: hsl(0, 0%, 100%);
+    --second-section-bg: hsl(220, 16%, 96%);
+    --hero-and-third-bg: hsl(0, 0%, 98%);
+}
+
+.container{
+    padding: 0 5rem;
+    overflow: hidden;
+}
+p{
+    color: var(--text-clr);
+    font-weight: 300;
+    /* font-size: 17px; */
+}
+h2{
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--heading-clr);
+}
+
+/* ? -----------------------Header section start------------------- */
+header{
+    width: 100%;
+    height: 150vh;
+    background-color: var(--hero-and-third-bg);
+}
+
+nav{
+    width: 100%;
+    height: 100px;
+    background-color: var(--nav-and-card-bg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 0 5rem 0 5rem; */
+}
+.menu a{
+    text-decoration: none;
+    color: var(--text-clr);
+    padding: 0 .7rem;
+    font-weight: 400;
+    font-size: 17px;
+}
+.menu a:hover{
+    border-bottom: 3px solid hsl(136, 65%, 51%);
+    transition: 0.2s;
+    color: var(--heading-clr);
+    padding-bottom: 10px;
+}
+.btn a{
+    background-image: var(--gradiant);
+    text-decoration: none;
+    color: var(--second-section-bg);
+    padding: 15px 25px;
+    border-radius: 30px;
+    font-weight: 400;
+}
+.btn a:hover{
+    opacity: 0.6;
+    transition: 0.2s;
+}
+
+.hero{
+    width: 100%;
+    height: calc(150vh - 100px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+}
+.hero-left{
+    margin-left: 5.5rem;
+    height: 18rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* background-color: royalblue; */
+    margin-bottom: 10rem;
+}
+.hero-left p{
+    width: 48%;
+    margin-bottom: 1.1rem;
+}
+.hero-left h1{
+    font-size: 3rem;
+    width: 50%;
+    font-weight: 400;
+    color: var(--heading-clr);
+}
+.hero-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10.5rem;
+    overflow-y: hidden;
+}
+.hero-right img:nth-child(1){
+    width: 40rem;
+    position: absolute;
+}
+.hero-right img:nth-last-child(2){
+    position: absolute;
+    width: 60rem;
+    z-index: -999;
+    bottom: 3rem;
+}
+.svg-logo{
+    fill: orange;
+}
+/* ! ------------------------section two start----------------------- */
+
+#two{
+    width: 100%;
+    height: 110vh;
+    background-color: var(--second-section-bg);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+.top p{
+    width: 65%;
+    margin-top: 1.5rem;
+}
+.box{
+    width: 300px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+.down{
+    display: flex;
+    gap: 30px;
+}
+.box h3{
+    color: var(--heading-clr);
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+.box img{
+    width: 3.5rem;
+}
+.box p{
+    font-size: 16px;
+}
+
+/* ? -------------------section three start--------------- */
+#three{
+    width: 100%;
+    height: 110vh;
+    background-color: var(--hero-and-third-bg);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.down-3{
+    display: flex;
+    gap: 30px;
+}
+.box-3{
+    width: 320px;
+    height: 470px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 10px;
+}
+.box-3 img{
+    width: 100%;
+    height: 45%;
+    border-radius: 5px;
+}
+.box-3 h3{
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--heading-clr);
+    padding: 0 20px;
+}
+.box-3 h3:hover{
+    color: hsl(136, 65%, 51%);
+    transition: 0.2s;
+    cursor: pointer;
+}
+.box-3 p{
+    font-size: 15px;
+    padding: 20px;
+}
+
+/* todo: -------------------fotter section start----------------- */
+
+footer{
+    width: 100%;
+    height: 40vh;
+    background-color: var(--heading-clr);
+}
+
+.ftr-top{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* ! ----------------------ftr clm1------------------ */
+.clm1{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+}
+.clm1-top{
+    --logo-clr: var(--nav-and-card-bg);
+}
+.clm1-top img{
+    width: 8rem;
+}
+.clm1-btm img{
+    width: 1.5rem;
+    padding: 0 3px;
+}
+.clm1-btm img:hover{
+    color: hsl(136, 65%, 51%);
+    transition: 0.2s;
+}
+/* ! ----------------------ftr clm2 & clm3------------------ */
+
+.clm2, .clm3{
+    /* background-color: crimson; */
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    justify-content: space-evenly;
+}
+.clm2 a, .clm3 a{
+    text-decoration: none;
+    color: var(--second-section-bg);
+    font-size: 17px;
+    font-weight: 300;
+}
+.clm2 a:hover, .clm3 a:hover{
+    color: hsl(136, 65%, 51%);
+    transition: 0.2s;
+}
+/* ! ----------------------ftr clm4------------------ */
+.clm4{
+    /* background-color: royalblue; */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: right;
+}
+.clm4-btm p{
+    font-size: 17px;
+    word-spacing: 1.5px;
+}
+.attribution{
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    font-size: .8rem;
+    color: var(--text-clr);
+    font-weight: 300;
+}
+.attribution a{
+    font-weight: 300;
+    text-decoration: none;
+    color: var(--text-clr);
+    word-spacing: 1px;
+}
+.attribution a:hover{
+    color: hsl(136, 65%, 51%);
+    transition: 0.2s;
+}
+
